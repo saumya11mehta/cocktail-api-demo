@@ -1,12 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
-
     <h1>Brewdog API Demo</h1>
-
-    <p>
-        Brewdog API consumption demo is made using Vue and Nuxt JS .
-    </p>
-   
+    <p>Brewdog API consumption demo is made using Vue and Nuxt JS.</p>
 </div>
 
 <br />
