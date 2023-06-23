@@ -1,87 +1,52 @@
-body {
-    font-family: "Nunito" ;
+@tailwind base;
+
+:root {
+  --primary: #06294E;
+  --secondary: #000428;
 }
 
-.heading{
-  text-align: center;
+body{
+  background-color: #06294E;
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
 }
 
-.beer-table {
-  width: 100%;
-  border-collapse: collapse;
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
 }
 
-.beer-table th,
-.beer-table td {
-  border: 1px solid transparent;
-  padding: 10px;
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
 }
 
-.beer-table th {
-  background-color: #EEEEEE;
-  font-weight: bold;
-  text-align: left;
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
 }
 
-.beer-row:nth-child(even) {
-  background-color: #EEEEEE;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Nunito;
+    color:white
+  }
 }
 
-.beer-row:hover {
-  background-color: #E0E0E0;
+.card-open {
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.4s ease;
 }
 
-.beer-image {
-  max-width: 100px;
-  max-height: 100px;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.highlight {
-  background-color: #FFEE58 !important;;
-  font-weight: bold;
-}
-
-.warning {
-  color: #EF5350;
-  font-weight: bold;
-}
-
-/* Modal styles */
-.modal {
-  display: block;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-  display: block;
-  margin: 10% auto;
-  max-width: 80%;
-  max-height: 80%;
-}
-
-.close {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  cursor: pointer;
-}
-
-.modal-image {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: 0 auto;
+.slide-in {
+  height: 70px;
+  overflow: hidden;
 }
