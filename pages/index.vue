@@ -13,7 +13,7 @@
       
         <div v-for="cocktail in sortedCocktails" :key="cocktail.id">
           <div  :class="{ 'bg-gradient-to-r from-black to-[#000428] flex mt-10 mx-10 p-10 rounded-lg shadow-2xl z-10':true, 'warning':cocktail.containsDairy }" @mouseenter="cocktail.isShow = true" @mouseleave="cocktail.isShow = false">
-            <div class="flex justify-center items-center basis-1/4 shrink-0 ">
+            <div class="flex justify-center items-center basis-1/4 shrink-0 cursor-pointer">
               <img :src="cocktail.strDrinkThumb" alt="Cocktail Image" class="w-1/2 h-auto" @click="openModal(cocktail)" />
             </div>
             <div class="flex-grow">
