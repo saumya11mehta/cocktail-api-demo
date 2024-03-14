@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
-    <h1>Brewdog API Demo</h1>
-    <p>Brewdog API consumption demo is made using Vue and Nuxt JS.</p>
+    <h1>Cocktail List API Demo</h1>
+    <p>Cocktail List API consumption demo is made using Vue and Nuxt JS.</p>
 </div>
 
 <br />
@@ -41,14 +41,14 @@
 
 <br />
 
-Brewdog API consumption demo is made using Vue and Nuxt JS. ⏭
+Cocktail API consumption demo is made using Vue and Nuxt JS. ⏭
 
 <!-- Folder Structure -->
 ### :bangbang: Folder Structure
 
 Here is the folder structure of this website.
 ```bash
-brewdog-api-demo/
+cocktail-api-demo/
 |- assets/
   |-- main.css
 |- pages/
@@ -89,7 +89,7 @@ brewdog-api-demo/
 Download or clone this repo by using the link below:
 
 ```bash
- https://github.com/saumya11mehta/brewdog-api-demo
+ https://github.com/saumya11mehta/cocktail-api-demo
 ```
 
 #### Step 2:
@@ -110,7 +110,7 @@ At the main folder execute the following command in console to get the required 
 
 #### Step 4:
 
-At the main folder execute the following command in console to creates a build directory with a production build of Brewdog API Demo:
+At the main folder execute the following command in console to creates a build directory with a production build of Cocktail API Demo:
 
 ```bash
   npm run build
